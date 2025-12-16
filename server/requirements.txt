@@ -1,0 +1,6 @@
+flask
+flask-cors
+pydantic
+datapizza-ai
+elevenlabs
+openai

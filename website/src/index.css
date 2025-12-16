@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Pydeia Design System - Intellectual Elegance */
+    /* Core Colors */
+    --midnight-navy: 210 44% 16%;
+    --parchment: 40 43% 98%;
+    --muted-gold: 38 34% 58%;
+    --gold-darker: 38 40% 45%;
+    --light-grey: 210 15% 85%;
+    --text-muted: 210 20% 55%;
+    
+    /* Semantic Tokens */
+    --background: var(--parchment);
+    --foreground: var(--midnight-navy);
+    
+    --sidebar-bg: var(--midnight-navy);
+    --sidebar-fg: 210 15% 90%;
+    --sidebar-active: var(--muted-gold);
+    
+    --card: 0 0% 100%;
+    --card-foreground: var(--midnight-navy);
+    
+    --primary: var(--midnight-navy);
+    --primary-foreground: var(--parchment);
+    
+    --secondary: var(--parchment);
+    --secondary-foreground: var(--midnight-navy);
+    
+    --accent: var(--muted-gold);
+    --accent-foreground: var(--midnight-navy);
+    
+    --muted: 40 20% 94%;
+    --muted-foreground: var(--text-muted);
+    
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 40 15% 88%;
+    --input: 40 15% 95%;
+    --ring: var(--muted-gold);
+    
+    --radius: 0.75rem;
+    
+    /* Animation Tokens */
+    --transition-elegant: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-elegant: 0 8px 32px -8px hsl(var(--midnight-navy) / 0.1);
+    --shadow-floating: 0 12px 48px -12px hsl(var(--midnight-navy) / 0.15);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  @keyframes wave {
+    0%, 100% {
+      height: 8px;
+    }
+    50% {
+      height: 48px;
+    }
+  }
+  
+  .animate-wave {
+    animation: wave 0.8s ease-in-out infinite;
+  }
+  
+  @keyframes buildUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-buildUp {
+    animation: buildUp 1s ease-out forwards;
+  }
+  
+  @keyframes sparkle {
+    0%, 100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-sparkle {
+    animation: sparkle 1.5s ease-in-out infinite;
+  }
+}
