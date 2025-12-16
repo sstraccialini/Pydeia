@@ -106,21 +106,30 @@ Open the URL shown by Vite (usually `http://localhost:5173`).
 
 ---
 
-## Screenshots
-- ![Hero](docs/screenshots/hero.png) — Landing / Home view (hero area showing the app name and CTA)  
+## 🖼️ Screenshots
+- Landing / Home view (hero area showing the app name and CTA)
+  ![Hero](docs/screenshots/hero.png) 
   *Shows the initial welcome screen where users can start the voice-guided conversation to get personalized university recommendations.*
-- ![First Question](docs/screenshots/first-question.png) — Conversation started (initial question + UI before listening)  
+
+- First Question (initial question + UI before listening)
+  ![First Question](docs/screenshots/first-question.png)  
   *Displays the first AI-generated question in the conversation flow, with the microphone icon ready for user response via speech recognition.*
-- ![Listening](docs/screenshots/listening.png) — Listening state (microphone active, transcript visible)  
+
+- Listening (microphone active, transcript visible)
+  ![Listening](docs/screenshots/listening.png)
   *Illustrates the active listening phase where the app captures the user's spoken answer, showing visual feedback like waveforms and status text.*
-- ![Elaborating Results](docs/screenshots/elaborating-results.png) — Results generation / loading screen  
+
+- Elaborating Results (results generation / loading screen)
+  ![Elaborating Results](docs/screenshots/elaborating-results.png)  
   *Depicts the animated loading screen that appears after the conversation completes, while the backend processes the student's profile and generates recommendations.*
-- ![Results](docs/screenshots/results.png) — Results page showing the three recommended universities  
+
+- Results page showing the three recommended universities
+  ![Results](docs/screenshots/results.png)
   *Presents the final output: a detailed view of the top three university recommendations, including scores, pros/cons, and key details like cost and distance.*
 
 ---
 
-## �📝 License & Credits
+## 📝 License & Credits
 
 This project is a demo / prototype. The university dataset is synthetic for demonstration purposes. Use at your own discretion and test thoroughly before any real-world deployment.
 
